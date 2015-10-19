@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> prompt</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+
+      $(document).ready(function(){
+        $("h2").click (function(){
+
+          var answerToTheQuestion = prompt("Who will you yell at today?");
+          console.log(answerToTheQuestion);
+
+          var response = "That is absolutely amazeballz that you want to yell at " + answerToTheQuestion + " today!!!!!!!!!!";
+          console.log(response);
+
+          $("h1").html (response);
+        });
+
+        });
+
+    </script>
+    <style>
+
+    </style>
+  </head>
+    <body>
+      <h2> Who will you yell at today?</h2>
+      <h1></h1>
+    </body>
+</html>

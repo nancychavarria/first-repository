@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>prompt</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+      $(document).ready(function(){
+
+        var areYou = prompt("Are you looking at me? ");
+
+
+        if(areYou ===  "yes") {
+          var statement = "Thank you.";
+        } else if(areYou === "no") {
+          var statement = "Pretty dope.";
+        } else {
+          var statement = "ok.";
+        }
+
+
+
+        $("h1").html(statement);
+
+      });
+    </script>
+    <style>
+
+    </style>
+  </head>
+  <body style= "background-color: lightgrey">
+    <h1 style=" color: hotpink"> What up?</h1>
+  </body>
+</head>
+</html>
